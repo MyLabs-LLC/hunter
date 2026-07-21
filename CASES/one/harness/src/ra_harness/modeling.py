@@ -64,27 +64,38 @@ def build_models(*, seed: int, threads: int) -> dict[str, Pipeline]:
                 scale=False,
             )
         ),
-        "xgboost": Pipeline(
-            _steps(
-                200,
-                XGBClassifier(
-                    n_estimators=300,
-                    max_depth=3,
-                    learning_rate=0.05,
-                    min_child_weight=2,
-                    subsample=0.8,
-                    colsample_bytree=0.5,
-                    reg_lambda=2.0,
-                    eval_metric="logloss",
-                    tree_method="hist",
-                    device="cpu",
-                    n_jobs=threads,
-                    random_state=seed,
-                ),
-                scale=False,
-            )
-        ),
+        "xgboost": build_xgboost_model(seed=seed, threads=threads),
     }
+
+
+def build_xgboost_model(
+    *,
+    seed: int,
+    threads: int,
+    selector_k: int = 200,
+    max_depth: int = 3,
+    reg_lambda: float = 2.0,
+) -> Pipeline:
+    return Pipeline(
+        _steps(
+            selector_k,
+            XGBClassifier(
+                n_estimators=300,
+                max_depth=max_depth,
+                learning_rate=0.05,
+                min_child_weight=2,
+                subsample=0.8,
+                colsample_bytree=0.5,
+                reg_lambda=reg_lambda,
+                eval_metric="logloss",
+                tree_method="hist",
+                device="cpu",
+                n_jobs=threads,
+                random_state=seed,
+            ),
+            scale=False,
+        )
+    )
 
 
 def evaluate_model(
