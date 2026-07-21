@@ -51,3 +51,17 @@ lineage baseline and not a reliable treatment-response biomarker.
 
 Each candidate changes one declared parameter. The scorer, labels, splits, and
 source matrix remain fixed.
+
+## Round-1 outcome
+
+| Candidate | Delta held-in AUC | Delta sealed AUC | Decision |
+| --- | ---: | ---: | --- |
+| 40 selected probes | -0.031 | +0.080 | Reject |
+| maximum depth 2 | +0.037 | -0.080 | Reject |
+| L2 regularization 10 | +0.056 | -0.080 | Reject |
+
+All candidates traded performance between partitions. None satisfied the fixed
+non-regression rule. The recurring mechanism is now **validation instability**:
+the sealed set has only ten people, and model/config changes do not generalize
+consistently across the split. The next addressable surface is independent cohort
+validation, not another same-cohort hyperparameter edit.
