@@ -1,0 +1,30 @@
+{
+  "project": "case-ra-d2t-a-anti-tnf-response",
+  "experiment": "case-ra-d2t-a-local-cpu",
+  "dataset": {
+    "accession": "GSE15258",
+    "platform": "GPL570",
+    "matrix_path": "data/raw/GSE15258/GSE15258_series_matrix.txt.gz",
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE15nnn/GSE15258/matrix/GSE15258_series_matrix.txt.gz",
+    "pubmed_id": "19699293",
+    "positive_labels": ["RESPONSE"],
+    "negative_labels": ["NORESPONSE"]
+  },
+  "evaluation": {
+    "primary_metric": "roc_auc",
+    "split_seed": 42,
+    "holdout_fraction": 0.2,
+    "cv_folds": 5,
+    "bootstrap_resamples": 1000,
+    "confidence": 0.95
+  },
+  "compute": {
+    "device": "cpu",
+    "threads": 4
+  },
+  "budget": {
+    "max_trials": 30,
+    "max_wallclock_s": 3600,
+    "target_threshold": 0.9
+  }
+}

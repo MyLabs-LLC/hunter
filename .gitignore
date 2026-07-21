@@ -216,3 +216,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local SDLC / biomedical harness artifacts
+# Keep source code, small manifests, reports, and de-identified case inputs in Git.
+# Keep downloaded cohorts, matrices, model binaries, and experiment stores local.
+CASES/*/harness/mlruns/
+CASES/*/harness/runs/
+CASES/*/harness/cache/
+CASES/*/harness/data/raw/
+CASES/*/harness/data/processed/
+CASES/*/harness/models/
+CASES/*/harness/artifacts/
+
+# Common large dataset and trained-model formats under case harnesses.
+CASES/*/harness/**/*.parquet
+CASES/*/harness/**/*.arrow
+CASES/*/harness/**/*.feather
+CASES/*/harness/**/*.h5
+CASES/*/harness/**/*.h5ad
+CASES/*/harness/**/*.loom
+CASES/*/harness/**/*.npy
+CASES/*/harness/**/*.npz
+CASES/*/harness/**/*.rds
+CASES/*/harness/**/*.joblib
+CASES/*/harness/**/*.pkl
+CASES/*/harness/**/*.pickle
+CASES/*/harness/**/*.onnx
+CASES/*/harness/**/*.ubj
+CASES/*/harness/**/*.xgb

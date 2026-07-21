@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "case_label": "CASE-RA-D2T-A",
+    "note": "Synthetic label, not an identifier. Fully de-identified: no PII/PHI.",
+    "purpose": "Input for an automated dataset + literature discovery harness. Research/hypothesis-generation only; not medical advice.",
+    "primary_focus": "severe / difficult-to-treat rheumatoid arthritis; goal = data-driven paths to remission"
+  },
+  "patient": {
+    "sex": "female",
+    "adult": true,
+    "illness_duration_years_approx": 10,
+    "phenotype": "multi-system autoimmune"
+  },
+  "conditions": {
+    "rheumatoid_arthritis": {
+      "severity": "severe",
+      "chronicity": "chronic (~decade)",
+      "control": "incomplete / apparently refractory",
+      "d2t_candidate": true
+    },
+    "comorbid_autoimmune": true,
+    "gastrointestinal_ibd": true,
+    "cardiac_workup": "open/unresolved",
+    "neurological_bulbar_workup": "active (context only, not the search target)",
+    "sleep_study": "never completed (open)",
+    "implant_device_status": "unconfirmed (open)"
+  },
+  "features": {
+    "seropositivity_rf": "UNKNOWN",
+    "seropositivity_anti_ccp_acpa": "UNKNOWN",
+    "disease_activity_das28": "UNKNOWN",
+    "disease_activity_cdai_sdai": "UNKNOWN",
+    "acute_phase_crp_esr": "UNKNOWN",
+    "erosive_disease": "UNKNOWN",
+    "csdmard_history": "UNKNOWN_OR_PARTIAL",
+    "anti_tnf_exposure": {"value": true, "agent_documented": "certolizumab pegol"},
+    "il6r_history": "UNKNOWN",
+    "jak_inhibitor_history": "UNKNOWN",
+    "anti_cd20_rituximab_history": "UNKNOWN",
+    "abatacept_tcell_costim_history": "UNKNOWN",
+    "anti_drug_antibody_or_drug_levels": "UNKNOWN",
+    "current_dmard_therapy": "GAP_~6_MONTHS",
+    "extra_articular_manifestations": "UNKNOWN",
+    "central_sensitization_fibromyalgia_overlap": "UNKNOWN_ASSESS",
+    "overlap_serologies_ana_ena": "UNKNOWN",
+    "hla_genetic_data": "UNKNOWN"
+  },
+  "data_to_confirm": [
+    "RF and anti-CCP/ACPA status and titers",
+    "DAS28/CDAI/SDAI trajectory + joint counts",
+    "CRP/ESR trend",
+    "erosive vs non-erosive; radiographic progression",
+    "full csDMARD/tsDMARD/biologic sequence w/ doses, durations, response, AEs, discontinuation reasons",
+    "anti-drug antibody / drug-level results on prior biologic 'failures'",
+    "extra-articular manifestations (nodules, ILD, vasculitis, secondary Sjogren)",
+    "ANA/ENA overlap panel; HLA if available",
+    "IBD phenotype and its current therapy (cross-indication relevance)",
+    "fibromyalgia / central sensitization assessment; adherence history"
+  ],
+  "candidate_data_resources": [
+    {"name": "NCBI GEO", "use": "RA synovial & whole-blood transcriptomes; DE + response signatures",
+     "example_accessions": ["GSE89408","GSE77298","GSE55235","GSE55457","GSE12021","GSE45867"]},
+    {"name": "ImmPort", "use": "curated immunology studies; synovial data", "example_accessions": ["SDY1599"]},
+    {"name": "AMP RA/SLE Network", "use": "single-cell synovial atlas; cell-state endotyping"},
+    {"name": "PEAC cohort", "use": "synovial pathotype (lympho-myeloid/diffuse/fibroid) vs response"},
+    {"name": "R4RA trial data", "use": "biopsy-stratified rituximab vs tocilizumab response; ML response + multidrug-resistance models"},
+    {"name": "ArrayExpress / BioStudies", "use": "additional expression/multi-omics; validation cohorts"},
+    {"name": "ClinicalTrials.gov", "use": "active refractory/D2T RA and autoimmune cell-therapy trials"},
+    {"name": "Open Targets / DGIdb / DrugBank", "use": "target-drug-disease mapping for repurposing"},
+    {"name": "tools", "use": "CIBERSORTx (deconvolution), GSEA (enrichment), WGCNA (modules)"}
+  ],
+  "seed_directions": [
+    {"id": "d2t_checklist", "grade": "established",
+     "hypothesis": "Formally classify as EULAR difficult-to-treat RA; verify diagnosis; separate inflammatory vs non-inflammatory (fibromyalgia/central sensitization) drivers before escalating."},
+    {"id": "moa_cycling", "grade": "established",
+     "hypothesis": "Structured mechanism-of-action switching across IL-6R / JAK / T-cell co-stim / B-cell classes; check anti-drug antibodies + drug levels to separate PK failure from mechanistic non-response."},
+    {"id": "precision_endotype", "grade": "emerging",
+     "hypothesis": "Endotype the disease (synovial B-cell-rich vs poor; stromal/fibroblast multidrug-resistant signature per R4RA) and match drug class to endotype; infer from blood transcriptomics where tissue unavailable."},
+    {"id": "shared_pathway", "grade": "emerging",
+     "hypothesis": "Exploit RA+IBD+autoimmune overlap: rank cross-indicated agents and shared upstream druggable nodes (B-cell, IL-6, JAK-STAT) via network/pathway enrichment."},
+    {"id": "cell_therapy_horizon", "grade": "investigational",
+     "hypothesis": "Track CD19 CAR-T (e.g., KYV-101 COMPARE trial in D2T RA), dual CD19/BCMA, and CAR-Treg approaches producing B-cell reset / drug-free remission in refractory autoimmune disease; trial-only, horizon option."}
+  ],
+  "disclaimer": "Research and hypothesis-generation aid only. Not medical advice, diagnosis, or treatment. All outputs require review and decision by the licensed care team."
+}
