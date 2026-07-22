@@ -29,3 +29,15 @@
 - Stopped reason: `no_non_regressing_candidate` for this evidence bundle.
 - Next evidence target: a larger independent anti-TNF response cohort to resolve
   whether any observed signal generalizes beyond the ten-person sealed split.
+
+## Round 2 — independent-cohort baseline
+
+- Dataset: GSE129705 baseline whole-blood RNA-seq, per-sample log2(CPM + 1).
+- Task: EULAR `Good` versus `None` response to infliximab or adalimumab.
+- Fixed populations: Cohort 1 held-in (34); Cohort 2 sealed external (29).
+- Provisional champion: logistic regression with 50 train-fold-selected genes.
+- ROC-AUC: 0.708 held-in, 0.662 external.
+- Interpretation: this is directionally stronger than the small random-holdout
+  task, but both intervals overlap chance and calibration is poor externally.
+- Next: fixed one-parameter logistic challengers for feature count and L2
+  regularization; accept only under the two-split non-regression rule.

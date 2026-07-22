@@ -65,3 +65,25 @@ non-regression rule. The recurring mechanism is now **validation instability**:
 the sealed set has only ten people, and model/config changes do not generalize
 consistently across the split. The next addressable surface is independent cohort
 validation, not another same-cohort hyperparameter edit.
+
+## Independent-cohort baseline — GSE129705
+
+The stronger follow-up task uses only pretreatment whole-blood RNA-seq and the
+publication's EULAR `Good` versus `None` response labels. Cohort 1 is the fixed
+held-in development population; Cohort 2 is the sealed external population.
+There are 34/29 patients and 25,370 genes in the two splits, respectively.
+
+| Model | Held-in ROC-AUC | External ROC-AUC |
+| --- | ---: | ---: |
+| Logistic regression | 0.708 | 0.662 |
+| Random forest | 0.691 | 0.606 |
+| XGBoost | 0.667 | 0.636 |
+
+Logistic regression is the provisional champion because it has the highest
+ROC-AUC on both fixed cohorts. Its 95% bootstrap intervals are 0.512–0.879
+held-in and 0.443–0.851 external, both overlapping chance. The external result
+therefore supports continued research only and does not pass a clinical gate.
+
+The first addressable hypothesis is regularization/feature-count stability in
+the linear model. Any challenger must improve or preserve both fixed-cohort
+ROC-AUC values; Cohort 2 and the evaluator remain sealed and unchanged.
