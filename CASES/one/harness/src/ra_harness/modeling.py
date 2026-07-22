@@ -47,18 +47,7 @@ def build_models(*, seed: int, threads: int) -> dict[str, Pipeline]:
     """Return conservative CPU baselines suitable for small p>>n cohorts."""
 
     return {
-        "logistic_regression": Pipeline(
-            _steps(
-                50,
-                LogisticRegression(
-                    C=1.0,
-                    class_weight="balanced",
-                    max_iter=2000,
-                    random_state=seed,
-                ),
-                scale=True,
-            )
-        ),
+        "logistic_regression": build_logistic_model(seed=seed),
         "random_forest": Pipeline(
             _steps(
                 200,
@@ -76,6 +65,26 @@ def build_models(*, seed: int, threads: int) -> dict[str, Pipeline]:
         ),
         "xgboost": build_xgboost_model(seed=seed, threads=threads),
     }
+
+
+def build_logistic_model(
+    *,
+    seed: int,
+    selector_k: int = 50,
+    regularization_c: float = 1.0,
+) -> Pipeline:
+    return Pipeline(
+        _steps(
+            selector_k,
+            LogisticRegression(
+                C=regularization_c,
+                class_weight="balanced",
+                max_iter=2000,
+                random_state=seed,
+            ),
+            scale=True,
+        )
+    )
 
 
 def build_xgboost_model(

@@ -8,6 +8,7 @@ from .geo import (
 )
 from .modeling import (
     build_models,
+    build_logistic_model,
     build_xgboost_model,
     evaluate_model,
     log_counts_per_million,
@@ -16,6 +17,7 @@ from .modeling import (
 __all__ = [
     "GeoSeries",
     "build_models",
+    "build_logistic_model",
     "build_xgboost_model",
     "evaluate_model",
     "log_counts_per_million",

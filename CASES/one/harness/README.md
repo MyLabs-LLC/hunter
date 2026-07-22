@@ -55,6 +55,7 @@ Use the interpreter printed by the SDLC skill bootstrap:
 ```bash
 PYTHONPATH=src /path/to/bootstrap-python run_baseline.py
 PYTHONPATH=src /path/to/bootstrap-python run_external_baseline.py
+PYTHONPATH=src /path/to/bootstrap-python run_external_candidates.py
 ```
 
 Large matrices, MLflow state, run outputs, and model binaries are ignored by Git.
