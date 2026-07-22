@@ -87,3 +87,22 @@ therefore supports continued research only and does not pass a clinical gate.
 The first addressable hypothesis is regularization/feature-count stability in
 the linear model. Any challenger must improve or preserve both fixed-cohort
 ROC-AUC values; Cohort 2 and the evaluator remain sealed and unchanged.
+
+## Independent-cohort challenger outcome
+
+| Candidate | Delta held-in AUC | Delta external AUC | Decision |
+| --- | ---: | ---: | --- |
+| 20 selected genes | -0.062 | -0.025 | Reject |
+| 100 selected genes | -0.003 | -0.015 | Reject |
+| logistic C 0.1 | -0.010 | -0.025 | Reject |
+
+None of the three one-parameter logistic challengers satisfied two-split
+non-regression. The 50-gene logistic baseline remains unchanged. This round
+also exhausts the directly supported generic hyperparameter hypotheses: the
+source study reports that baseline genome-wide good/non-response differences
+did not concord significantly between cohorts, while cell-type composition did.
+
+Stop reason: `no_non_regressing_candidate`. Continuing to choose generic
+hyperparameters against Cohort 2 would increasingly tune to the external set.
+A new loop should first pre-register either a cell-composition feature contract
+or an additional untouched cohort, then reseal evaluation before compute.

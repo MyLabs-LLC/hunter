@@ -41,3 +41,13 @@
   task, but both intervals overlap chance and calibration is poor externally.
 - Next: fixed one-parameter logistic challengers for feature count and L2
   regularization; accept only under the two-split non-regression rule.
+
+## Round 3 — all external-cohort challengers rejected
+
+- Selected genes 50 -> 20: held-in AUC 0.646, external AUC 0.636.
+- Selected genes 50 -> 100: held-in AUC 0.705, external AUC 0.646.
+- Logistic C 1.0 -> 0.1: held-in AUC 0.698, external AUC 0.636.
+- Decision: reject all; the 50-gene logistic baseline remains champion.
+- Stopped reason: `no_non_regressing_candidate`.
+- Next evidence target: pre-registered cell-composition features or a third
+  untouched cohort; do not continue generic tuning against Cohort 2.
