@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Any
 
 import numpy as np
+import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectKBest, VarianceThreshold, f_classif
 from sklearn.linear_model import LogisticRegression
@@ -20,6 +21,15 @@ class ModelEvaluation:
     held_in: Any
     held_out: Any
     estimator: Pipeline
+
+
+def log_counts_per_million(X: pd.DataFrame) -> pd.DataFrame:
+    """Apply per-sample log2(CPM + 1) normalization without cohort leakage."""
+
+    library_sizes = X.sum(axis=1)
+    if (library_sizes <= 0).any():
+        raise ValueError("count matrix contains a sample with no mapped reads")
+    return np.log2(X.div(library_sizes, axis=0) * 1_000_000 + 1)
 
 
 def _steps(selector_k: int, estimator: Any, *, scale: bool) -> list[tuple[str, Any]]:

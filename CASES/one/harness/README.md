@@ -28,6 +28,15 @@ features are available.
 - Evaluation code and the sealed sample assignment after baseline measurement.
 - Downloaded source records and checksums.
 
+## Independent-cohort task
+
+`config_gse129705.json` defines a second, stronger anti-TNF response test using
+baseline whole-blood RNA-seq from `GSE129705`. It predicts EULAR `Good` versus
+`None`, trains with five-fold out-of-fold predictions on Cohort 1, and reserves
+Cohort 2 as the sealed external cohort. Counts receive per-sample
+`log2(CPM + 1)` normalization; variance filtering and supervised feature
+selection remain inside each training fold.
+
 ## Editable surfaces
 
 - Model family and hyperparameters within the approved CPU families.
@@ -45,6 +54,7 @@ Use the interpreter printed by the SDLC skill bootstrap:
 
 ```bash
 PYTHONPATH=src /path/to/bootstrap-python run_baseline.py
+PYTHONPATH=src /path/to/bootstrap-python run_external_baseline.py
 ```
 
 Large matrices, MLflow state, run outputs, and model binaries are ignored by Git.

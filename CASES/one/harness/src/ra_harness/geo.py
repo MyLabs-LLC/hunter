@@ -18,13 +18,8 @@ def _clean(value: str) -> str:
     return value.strip().strip('"')
 
 
-def load_geo_series_matrix(path: str | Path) -> GeoSeries:
-    """Load expression and sample metadata from a GEO series-matrix file.
-
-    Expression is returned sample-by-probe. Repeated GEO characteristic rows are
-    expanded into one metadata column per characteristic key.
-    """
-
+def load_geo_metadata(path: str | Path) -> pd.DataFrame:
+    """Load sample metadata from a GEO series-matrix file."""
     path = Path(path)
     opener = gzip.open if path.suffix == ".gz" else open
     sample_rows: dict[str, list[str]] = {}
@@ -66,6 +61,19 @@ def load_geo_series_matrix(path: str | Path) -> GeoSeries:
         key, items = next(iter(parsed.items()))
         metadata[key] = items
 
+    return metadata
+
+
+def load_geo_series_matrix(path: str | Path) -> GeoSeries:
+    """Load expression and sample metadata from a GEO series-matrix file.
+
+    Expression is returned sample-by-probe. Repeated GEO characteristic rows are
+    expanded into one metadata column per characteristic key.
+    """
+
+    path = Path(path)
+    metadata = load_geo_metadata(path)
+
     expression = pd.read_csv(
         path,
         sep="\t",
@@ -85,3 +93,47 @@ def load_geo_series_matrix(path: str | Path) -> GeoSeries:
         raise ValueError("GEO expression matrix contains missing numeric values")
 
     return GeoSeries(expression=expression, metadata=metadata)
+
+
+def load_geo_supplementary_counts(
+    metadata_path: str | Path,
+    counts_path: str | Path,
+    *,
+    annotation_columns: int = 6,
+) -> GeoSeries:
+    """Load a GEO supplementary count table whose columns use sample titles."""
+
+    metadata = load_geo_metadata(metadata_path)
+    table = pd.read_csv(counts_path, sep="\t", compression="infer")
+    if table.shape[1] <= annotation_columns:
+        raise ValueError("supplementary count table has no sample columns")
+
+    gene_column = str(table.columns[0])
+    genes = table[gene_column].astype(str)
+    if genes.duplicated().any():
+        raise ValueError("supplementary count table contains duplicate gene IDs")
+
+    sample_columns = list(table.columns[annotation_columns:])
+    titles = metadata["title"]
+    if titles.duplicated().any():
+        raise ValueError("GEO metadata contains duplicate sample titles")
+    title_to_accession = pd.Series(metadata.index, index=titles)
+    missing = sorted(set(sample_columns) - set(title_to_accession.index))
+    if missing:
+        raise ValueError(f"count columns missing from GEO metadata: {missing[:3]}")
+
+    expression = table.iloc[:, annotation_columns:].T
+    expression.columns = genes
+    expression.index = pd.Index(
+        [title_to_accession.loc[title] for title in expression.index],
+        name="sample_id",
+    )
+    expression = expression.apply(pd.to_numeric, errors="raise")
+    expression = expression.loc[metadata.index.intersection(expression.index, sort=False)]
+
+    if expression.index.has_duplicates or expression.columns.has_duplicates:
+        raise ValueError("supplementary expression matrix contains duplicates")
+    if expression.isna().any().any() or (expression < 0).any().any():
+        raise ValueError("supplementary expression matrix contains invalid counts")
+
+    return GeoSeries(expression=expression, metadata=metadata.loc[expression.index])

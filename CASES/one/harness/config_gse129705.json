@@ -1,0 +1,34 @@
+{
+  "project": "case-ra-d2t-a-anti-tnf-external-cohorts",
+  "experiment": "case-ra-d2t-a-gse129705-local-cpu",
+  "dataset": {
+    "accession": "GSE129705",
+    "platform": "GPL16791",
+    "metadata_path": "data/raw/GSE129705/GSE129705_series_matrix.txt.gz",
+    "counts_path": "data/raw/GSE129705/GSE129705_processed.txt.gz",
+    "metadata_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE129nnn/GSE129705/matrix/GSE129705_series_matrix.txt.gz",
+    "counts_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE129nnn/GSE129705/suppl/GSE129705_c12-ra-wb-bl-mo3-processed-data-file.txt.gz",
+    "pubmed_id": "31647025",
+    "visit": "BASELINE",
+    "held_in_cohort": "Cohort 1",
+    "sealed_cohort": "Cohort 2",
+    "positive_labels": ["GOOD"],
+    "negative_labels": ["NONE"]
+  },
+  "evaluation": {
+    "primary_metric": "roc_auc",
+    "split_seed": 42,
+    "cv_folds": 5,
+    "bootstrap_resamples": 1000,
+    "confidence": 0.95
+  },
+  "compute": {
+    "device": "cpu",
+    "threads": 4
+  },
+  "budget": {
+    "max_trials": 30,
+    "max_wallclock_s": 3600,
+    "target_threshold": 0.9
+  }
+}
