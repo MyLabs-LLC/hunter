@@ -145,3 +145,29 @@ No public baseline treatment-response dataset was found in this evidence
 tranche. Therefore the editable model surface remains empty and the fixed
 GSE129705 external evaluator remains unaccessed. See
 `reports/web_evidence_review.md` and `audit/round5_web_evidence_loop.json`.
+
+## Round-6 100-source remission evidence acquisition
+
+The final PubMed contract completed 100 unique additional reads across five
+predeclared case-relevant topic families. A preliminary newest-first retrieval
+was rejected because topic words could be incidental and preclinical work could
+enter the pool. The corrected contract requires RA-indexed human clinical
+evidence or reviews, title-level topic terms, readable abstracts, unique PMIDs,
+and relevance ranking.
+
+The dominant case-level failure signature remains **missing decision-critical
+clinical data**, not a lack of plausible drug mechanisms. The record does not
+yet establish current inflammatory activity, formal D2T status, an adequate
+certolizumab failure, the IBD phenotype, or a complete safety contract. The
+literature therefore supports a clinician-led remission process but cannot
+produce a treatment label.
+
+Diet/lifestyle evidence forms a separate cluster: exercise has the strongest
+guideline support for function and health; Mediterranean-style or other
+anti-inflammatory diets may provide small adjunctive effects. No source
+demonstrated cure of established RA, and these interventions are explicitly
+positioned alongside DMARD care. No new public response dataset was found, so
+the sealed evaluator remained untouched.
+
+See `reports/case_remission_report.md`, `reports/pubmed_100_loop.md`, and
+`audit/round6_pubmed_remission_loop.json`.

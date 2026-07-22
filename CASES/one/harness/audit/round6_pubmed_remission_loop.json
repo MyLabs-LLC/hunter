@@ -1,0 +1,63 @@
+{
+  "id": "round6_pubmed_remission_loop",
+  "surface": "case-focused remission, diet, lifestyle, safety, and treatment-sequencing evidence acquisition",
+  "budget": {
+    "source_iterations": 100,
+    "completed_iterations": 100,
+    "unique_pmids": 100,
+    "unique_normalized_titles": 100,
+    "previously_reviewed_pmids_excluded": 4
+  },
+  "source_contract": {
+    "provider": "PubMed E-utilities",
+    "publication_date_start": "2010-01-01",
+    "ranking": "relevance",
+    "requirements": [
+      "RA-indexed human clinical evidence or evidence review",
+      "topic term in article title",
+      "readable abstract",
+      "unique PMID",
+      "no previously reviewed PMID"
+    ],
+    "topic_quotas": {
+      "remission_and_treat_to_target": 25,
+      "treatment_sequence_and_precision": 25,
+      "ibd_overlap_and_safety": 20,
+      "diet_and_nutrition": 15,
+      "lifestyle_and_function": 15
+    }
+  },
+  "preflight_retrieval": {
+    "decision": "invalidated_before_synthesis",
+    "failure_signature": "recency-only ranking admitted incidental and preclinical RA mentions",
+    "corrective_edit": "require RA-indexed human evidence/reviews, topic terms in titles, and relevance ranking"
+  },
+  "final_readout": {
+    "total_abstract_characters_read": 150994,
+    "open_full_texts_cached": 40,
+    "full_text_not_in_pubmed_central": 51,
+    "full_text_acquisition_failures": 9,
+    "evidence_design_counts": {
+      "guideline": 2,
+      "systematic_review_or_meta_analysis": 12,
+      "randomized_trial": 6,
+      "observational_or_registry": 3,
+      "other_peer_reviewed_research": 18,
+      "review": 59
+    }
+  },
+  "case_findings": {
+    "specific_treatment_proven": false,
+    "diet_or_lifestyle_cure_found": false,
+    "formal_d2t_status_confirmed": false,
+    "highest_support_remission_process": "confirm inflammatory activity, reconstruct treatment failure, restore treatment continuity, coordinate RA-IBD selection, apply individualized safety gates, and monitor to target",
+    "highest_value_missing_data": "objective current inflammatory disease activity plus complete DMARD exposure-response-discontinuation history",
+    "precision_medicine_status": "synovial molecular response prediction is emerging and not validated for local patient-level prescribing",
+    "new_public_response_dataset": false,
+    "new_model_experiment": false,
+    "sealed_evaluator": "GSE129705 Cohort 2 remained untouched"
+  },
+  "decision": "publish_detailed_clinician_discussion_report_without_treatment_prescription",
+  "stopped_reason": "budget_complete_case_blocked_on_missing_clinical_data",
+  "clinical_status": "de-identified research aid only; licensed care-team review required"
+}

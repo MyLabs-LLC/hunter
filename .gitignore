@@ -232,6 +232,7 @@ CASES/*/harness/artifacts/
 CASES/*/harness/research/papers/
 CASES/*/harness/research/text/
 CASES/*/harness/research/geo/
+CASES/*/harness/research/pubmed/
 
 # Common large dataset and trained-model formats under case harnesses.
 CASES/*/harness/**/*.parquet

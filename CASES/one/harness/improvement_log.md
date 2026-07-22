@@ -95,3 +95,31 @@
 - Decision: no treatment selection and no candidate experiment. Detailed,
   source-linked synthesis: `reports/web_evidence_review.md`.
 - Stopped reason: `no_individualizable_treatment_evidence`.
+
+## Round 6 — 100-source PubMed remission loop
+
+- Budget: 100 additional unique PMID iterations across five fixed topics:
+  remission/treat-to-target (25), treatment sequence/precision (25), IBD/safety
+  (20), diet/nutrition (15), and lifestyle/function (15).
+- Preflight failure: a recency-only retrieval admitted incidental and
+  preclinical RA mentions. It was invalidated before synthesis. The retained
+  retrieval requires RA-indexed human clinical evidence/reviews, title-level
+  topic relevance, readable abstracts, unique PMIDs, and relevance ranking.
+- Final acquisition: 100/100 unique PMIDs and normalized titles; 150,994
+  abstract characters read; 40 open full texts cached locally. Evidence mix:
+  2 guidelines, 12 systematic reviews/meta-analyses, 6 randomized trials,
+  3 observational/registry studies,
+  18 other peer-reviewed studies, and 59 reviews.
+- Case finding: the best-supported remission process is to confirm active
+  inflammation, reconstruct the complete treatment/failure history, restore
+  treatment continuity, coordinate RA and IBD selection, apply individualized
+  safety gates, and monitor to target. No specific drug was proven for the case.
+- Diet/lifestyle finding: exercise and a healthy Mediterranean-style pattern can
+  support function, symptoms, and cardiometabolic health, but no credible diet,
+  supplement, or lifestyle cure was found.
+- Dataset gate: no new compatible public patient-level response dataset was
+  identified, so no model experiment was run and GSE129705 Cohort 2 remained
+  untouched.
+- Reports: `reports/pubmed_100_loop.md` and
+  `reports/case_remission_report.md`.
+- Stopped reason: `budget_complete_case_blocked_on_missing_clinical_data`.

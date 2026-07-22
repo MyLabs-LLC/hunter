@@ -215,3 +215,20 @@ assessment, exposure history, overlap-disease details, and safety workup mean
 there is still no patient-level treatment proof. The complete source-linked
 analysis is in [the web-evidence review](web_evidence_review.md); the audit
 record is [round 5](../audit/round5_web_evidence_loop.json).
+
+## 10. One-hundred-source remission, diet, and lifestyle supplement
+
+The next loop read 100 additional unique PubMed sources under a corrected
+case-focused evidence contract. It found no specific treatment proof and no
+dietary or lifestyle cure. It did refine the most defensible path: verify active
+inflammation, reconstruct the full DMARD and certolizumab history, close the
+treatment-continuity gap, coordinate RA and IBD management, complete the
+individual safety assessment, and use fixed three-/six-month treat-to-target
+checkpoints.
+
+Exercise has strong guideline support as adjunctive care; Mediterranean-style
+eating is a conditional, tolerance-dependent option. Both may improve health or
+symptoms, but neither replaces DMARD therapy. The detailed case analysis is in
+[the remission report](case_remission_report.md), the 100-source acquisition
+record is [the PubMed loop report](pubmed_100_loop.md), and the machine-readable
+audit is [round 6](../audit/round6_pubmed_remission_loop.json).

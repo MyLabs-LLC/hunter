@@ -1,0 +1,2417 @@
+{
+  "case": "CASE-RA-D2T-A",
+  "run_date": "2026-07-22",
+  "iteration_budget": 100,
+  "completed_iterations": 100,
+  "unique_pmids": 100,
+  "unique_normalized_titles": 100,
+  "previously_reviewed_pmids_excluded": [
+    "27654603",
+    "33854570",
+    "39288740",
+    "41826212"
+  ],
+  "date_filter": "(\"2010/01/01\"[Date - Publication] : \"3000\"[Date - Publication])",
+  "topic_targets": {
+    "remission_and_treat_to_target": 25,
+    "treatment_sequence_and_precision": 25,
+    "ibd_overlap_and_safety": 20,
+    "diet_and_nutrition": 15,
+    "lifestyle_and_function": 15
+  },
+  "evidence_design_counts": {
+    "other_peer_reviewed_research": 18,
+    "review": 59,
+    "guideline": 2,
+    "systematic_review_or_meta_analysis": 12,
+    "observational_or_registry": 3,
+    "randomized_trial": 6
+  },
+  "full_text_status_counts": {
+    "not_in_pubmed_central": 51,
+    "cached": 39,
+    "failed:HTTPError": 9,
+    "downloaded": 1
+  },
+  "total_abstract_characters_read": 150994,
+  "records": [
+    {
+      "pmid": "32601335",
+      "title": "Distinct synovial tissue macrophage subsets regulate inflammation and remission in rheumatoid arthritis.",
+      "journal": "Nature medicine",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1038/s41591-020-0939-8",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 1,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "difficult_to_treat",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1296,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "33004335",
+      "title": "EULAR definition of difficult-to-treat rheumatoid arthritis.",
+      "journal": "Annals of the rheumatic diseases",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1136/annrheumdis-2020-217344",
+      "pmcid": "PMC7788062",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 2,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1956,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 64188
+    },
+    {
+      "pmid": "37776482",
+      "title": "A Review of Difficult-to-Treat Rheumatoid Arthritis: Definition, Clinical Presentation, and Management.",
+      "journal": "Current rheumatology reports",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s11926-023-01117-6",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 3,
+      "evidence_design": "review",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response",
+        "weight_or_obesity",
+        "smoking",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1316,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "35672464",
+      "title": "Synovial tissue macrophages in joint homeostasis, rheumatoid arthritis and disease remission.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1038/s41584-022-00790-8",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 4,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1088,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "34407926",
+      "title": "EULAR points to consider for the management of difficult-to-treat rheumatoid arthritis.",
+      "journal": "Annals of the rheumatic diseases",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Practice Guideline",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1136/annrheumdis-2021-220973",
+      "pmcid": "PMC8761998",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 5,
+      "evidence_design": "guideline",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1646,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 256255
+    },
+    {
+      "pmid": "41188120",
+      "title": "Difficult-to-treat rheumatoid arthritis: systematic review and meta-analysis on global prevalence.",
+      "journal": "Annals of the rheumatic diseases",
+      "year": "2026",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1016/j.ard.2025.10.007",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 6,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 2059,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "39383505",
+      "title": "Difficult-to-treat rheumatoid arthritis: what have we learned and what do we still need to learn?",
+      "journal": "Rheumatology (Oxford, England)",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1093/rheumatology/keae544",
+      "pmcid": "PMC11701314",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 7,
+      "evidence_design": "review",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 935,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 118568
+    },
+    {
+      "pmid": "38851883",
+      "title": "Five-year follow-up of patients with difficult-to-treat rheumatoid arthritis.",
+      "journal": "Rheumatology (Oxford, England)",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1093/rheumatology/keae325",
+      "pmcid": "PMC12048047",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 8,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1581,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 118382
+    },
+    {
+      "pmid": "38482760",
+      "title": "[Difficult-to-treat rheumatoid arthritis].",
+      "journal": "Revue medicale suisse",
+      "year": "2024",
+      "publication_types": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "doi": "10.53738/REVMED.2024.20.865.541",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 9,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 710,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36274193",
+      "title": "American College of Rheumatology/EULAR Remission Criteria for Rheumatoid Arthritis: 2022 Revision.",
+      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/art.42347",
+      "pmcid": "PMC10092655",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 10,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 2199,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 113779
+    },
+    {
+      "pmid": "39198829",
+      "title": "Efficacy and safety of current therapies for difficult-to-treat rheumatoid arthritis: a systematic review and network meta-analysis.",
+      "journal": "Journal of translational medicine",
+      "year": "2024",
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article",
+        "Network Meta-Analysis",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1186/s12967-024-05569-x",
+      "pmcid": "PMC11351028",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 11,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "remission",
+        "difficult_to_treat",
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1919,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 85420
+    },
+    {
+      "pmid": "30013029",
+      "title": "Multi-omics monitoring of drug response in rheumatoid arthritis in pursuit of molecular remission.",
+      "journal": "Nature communications",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1038/s41467-018-05044-4",
+      "pmcid": "PMC6048065",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 12,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1039,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 149618
+    },
+    {
+      "pmid": "38807392",
+      "title": "POST-COVID-19 INFLAMMATORY RHEUMATOID ARTHRITIS REMISSION.",
+      "journal": "Georgian medical news",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 13,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1727,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "23073309",
+      "title": "Treat-to-target: measures.",
+      "journal": "Clinical and experimental rheumatology",
+      "year": "2012",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 14,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 694,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "20697983",
+      "title": "Remission in rheumatoid arthritis.",
+      "journal": "Current rheumatology reports",
+      "year": "2010",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1007/s11926-010-0121-2",
+      "pmcid": "PMC2927687",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 15,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 624,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 78867
+    },
+    {
+      "pmid": "36106320",
+      "title": "Non-pharmacological treatment in difficult-to-treat rheumatoid arthritis.",
+      "journal": "Frontiers in medicine",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3389/fmed.2022.991677",
+      "pmcid": "PMC9465607",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 16,
+      "evidence_design": "review",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 945,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 145062
+    },
+    {
+      "pmid": "22460146",
+      "title": "Defining remission in rheumatoid arthritis.",
+      "journal": "Annals of the rheumatic diseases",
+      "year": "2012",
+      "publication_types": [
+        "Consensus Statement",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1136/annrheumdis-2011-200618",
+      "pmcid": "PMC3648878",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 17,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1897,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36353219",
+      "title": "Difficult-to-treat rheumatoid arthritis: Current concept and unsolved problems.",
+      "journal": "Frontiers in medicine",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3389/fmed.2022.1049875",
+      "pmcid": "PMC9637686",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 18,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "difficult_to_treat",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1469,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 70914
+    },
+    {
+      "pmid": "26753210",
+      "title": "[Treat-to-target in rheumatology].",
+      "journal": "Wiadomosci lekarskie (Warsaw, Poland : 1960)",
+      "year": "2015",
+      "publication_types": [
+        "English Abstract",
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 19,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1426,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "30700865",
+      "title": "Treat-to-target in rheumatoid arthritis - are we there yet?",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-019-0170-5",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 20,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 990,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "26131966",
+      "title": "Remission in rheumatoid arthritis: is it all the same?",
+      "journal": "Expert review of clinical pharmacology",
+      "year": "2015",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1586/17512433.2015.1061429",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 21,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1144,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "35039665",
+      "title": "Treat-to-target in systemic lupus erythematosus: advancing towards its implementation.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-021-00739-3",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 22,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1295,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "33521569",
+      "title": "Rheumatoid Arthritis: Defining Clinical and Ultrasound Deep Remission.",
+      "journal": "Mediterranean journal of rheumatology",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.31138/mjr.31.4.384",
+      "pmcid": "PMC7841096",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 23,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 929,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 57064
+    },
+    {
+      "pmid": "29600949",
+      "title": "Clinical remission in rheumatoid arthritis and psoriatic arthritis.",
+      "journal": "Clinical and experimental rheumatology",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 24,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1137,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40202700",
+      "title": "Management of Late-Onset Rheumatoid Arthritis with Treat-to-Target Strategy.",
+      "journal": "Drugs & aging",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s40266-025-01195-4",
+      "pmcid": "",
+      "source_topic": "remission_and_treat_to_target",
+      "source_query": "RA_FILTER AND (remission[Title] OR \"treat to target\"[Title] OR \"difficult to treat\"[Title])",
+      "iteration": 25,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1710,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "37984057",
+      "title": "Upadacitinib: Mechanism of action, clinical, and translational science.",
+      "journal": "Clinical and translational science",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1111/cts.13688",
+      "pmcid": "PMC10771099",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 26,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "ibd_overlap",
+        "safety"
+      ],
+      "abstract_characters_read": 1610,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 97659
+    },
+    {
+      "pmid": "32415503",
+      "title": "Molecular mechanism of action and pharmacokinetic properties of methotrexate.",
+      "journal": "Molecular biology reports",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s11033-020-05481-9",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 27,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1289,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36685485",
+      "title": "Clinical effect and biological mechanism of exercise for rheumatoid arthritis: A mini review.",
+      "journal": "Frontiers in immunology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.3389/fimmu.2022.1089621",
+      "pmcid": "PMC9852831",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 28,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1380,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 230671
+    },
+    {
+      "pmid": "32245893",
+      "title": "Economic burden of rheumatoid arthritis: a systematic review of literature in biologic era.",
+      "journal": "Annals of the rheumatic diseases",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Systematic Review"
+      ],
+      "doi": "10.1136/annrheumdis-2019-216243",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 29,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1858,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "31461658",
+      "title": "Molecular Portraits of Early Rheumatoid Arthritis Identify Clinical and Treatment Response Phenotypes.",
+      "journal": "Cell reports",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1016/j.celrep.2019.07.091",
+      "pmcid": "PMC6718830",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 30,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1204,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 161936
+    },
+    {
+      "pmid": "40691443",
+      "title": "A longitudinal cohort study uncovers plasma protein biomarkers predating clinical onset and treatment response of rheumatoid arthritis.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1038/s41467-025-62032-1",
+      "pmcid": "PMC12279936",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 31,
+      "evidence_design": "observational_or_registry",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1160,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 201575
+    },
+    {
+      "pmid": "35248489",
+      "title": "Precision medicine in rheumatoid arthritis.",
+      "journal": "Best practice & research. Clinical rheumatology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1016/j.berh.2022.101742",
+      "pmcid": "PMC8977251",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 32,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 914,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "37161083",
+      "title": "Matrix metalloproteinases in arthritis: towards precision medicine.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-023-00966-w",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 33,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1762,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36274358",
+      "title": "Tapering biologic DMARDs in rheumatoid arthritis.",
+      "journal": "Current opinion in pharmacology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.coph.2022.102308",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 34,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1227,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "37436748",
+      "title": "Response to Biologic Drugs in Patients With Rheumatoid Arthritis and Antidrug Antibodies.",
+      "journal": "JAMA network open",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1001/jamanetworkopen.2023.23098",
+      "pmcid": "PMC10339150",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 35,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "weight_or_obesity"
+      ],
+      "abstract_characters_read": 3659,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 101085
+    },
+    {
+      "pmid": "29981377",
+      "title": "Predictors of treatment response in rheumatoid arthritis.",
+      "journal": "Joint bone spine",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jbspin.2018.03.018",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 36,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1497,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40801465",
+      "title": "A Longitudinal Study Reveals Metabolomic Markers for Individuals at Risk, Disease Severity, and Treatment Response in Rheumatoid Arthritis.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/advs.202504414",
+      "pmcid": "PMC12520550",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 37,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1407,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 220607
+    },
+    {
+      "pmid": "32276742",
+      "title": "Precision medicine and management of rheumatoid arthritis.",
+      "journal": "Journal of autoimmunity",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jaut.2020.102405",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 38,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1633,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36015273",
+      "title": "-Omic Approaches and Treatment Response in Rheumatoid Arthritis.",
+      "journal": "Pharmaceutics",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/pharmaceutics14081648",
+      "pmcid": "PMC9412998",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 39,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1405,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 279417
+    },
+    {
+      "pmid": "36216923",
+      "title": "Precision medicine: the precision gap in rheumatic disease.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-022-00845-w",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 40,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1137,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "27796445",
+      "title": "Biologic therapies and bone loss in rheumatoid arthritis.",
+      "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
+      "year": "2017",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s00198-016-3769-2",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 41,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response"
+      ],
+      "abstract_characters_read": 2855,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "24295560",
+      "title": "Pharmacogenomics of biological treatment in rheumatoid arthritis.",
+      "journal": "Expert opinion on biological therapy",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1517/14712598.2014.859672",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 42,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1038,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "38766765",
+      "title": "Non-TNF biologics and their biosimilars in rheumatoid arthritis.",
+      "journal": "Expert opinion on biological therapy",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1080/14712598.2024.2358165",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 43,
+      "evidence_design": "review",
+      "detected_topics": [
+        "difficult_to_treat",
+        "treatment_response",
+        "precision_or_biomarker",
+        "safety"
+      ],
+      "abstract_characters_read": 1434,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "32864695",
+      "title": "Predicting treatment response to IL6R blockers in rheumatoid arthritis.",
+      "journal": "Rheumatology (Oxford, England)",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1093/rheumatology/keaa529",
+      "pmcid": "PMC7733712",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 44,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 963,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 93508
+    },
+    {
+      "pmid": "33147106",
+      "title": "Tailoring biologic therapy for real-world rheumatoid arthritis patients.",
+      "journal": "Expert opinion on biological therapy",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1080/14712598.2021.1847268",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 45,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1136,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "25747348",
+      "title": "Rheumatoid arthritis: Perioperative management of biologics and DMARDs.",
+      "journal": "Seminars in arthritis and rheumatism",
+      "year": "2015",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.semarthrit.2015.01.008",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 46,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1112,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "24684672",
+      "title": "Rheumatoid arthritis and the biological clock.",
+      "journal": "Expert review of clinical immunology",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1586/1744666X.2014.899904",
+      "pmcid": "",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 47,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response"
+      ],
+      "abstract_characters_read": 1285,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40603860",
+      "title": "Deep molecular profiling of synovial biopsies in the STRAP trial identifies signatures predictive of treatment response to biologic therapies in rheumatoid arthritis.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1038/s41467-025-60987-9",
+      "pmcid": "PMC12223067",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 48,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1372,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 191134
+    },
+    {
+      "pmid": "27271314",
+      "title": "Biologic interventions for fatigue in rheumatoid arthritis.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2016",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ],
+      "doi": "10.1002/14651858.CD008334.pub2",
+      "pmcid": "PMC7175833",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 49,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 4084,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40269471",
+      "title": "Pursuing Precision Medicine in Managing Rheumatoid Arthritis.",
+      "journal": "International journal of rheumatic diseases",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1111/1756-185X.70239",
+      "pmcid": "PMC12018724",
+      "source_topic": "treatment_sequence_and_precision",
+      "source_query": "RA_FILTER AND (biologic*[Title] OR DMARD*[Title] OR \"treatment response\"[Title] OR \"precision medicine\"[Title] OR \"mechanism of action\"[Title])",
+      "iteration": 50,
+      "evidence_design": "review",
+      "detected_topics": [
+        "remission",
+        "treatment_response",
+        "precision_or_biomarker"
+      ],
+      "abstract_characters_read": 1590,
+      "full_text_status": "downloaded",
+      "full_text_bytes_cached": 75318
+    },
+    {
+      "pmid": "35081280",
+      "title": "Cardiovascular and Cancer Risk with Tofacitinib in Rheumatoid Arthritis.",
+      "journal": "The New England journal of medicine",
+      "year": "2022",
+      "publication_types": [
+        "Comparative Study",
+        "Equivalence Trial",
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1056/NEJMoa2109927",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 51,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 2322,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "36729119",
+      "title": "Cardiovascular Manifestations in Rheumatoid Arthritis.",
+      "journal": "Cardiology in review",
+      "year": "2022",
+      "publication_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "doi": "10.1097/CRD.0000000000000486",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 52,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1282,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "38216757",
+      "title": "Efficacy and safety of JAK inhibitors in rheumatoid arthritis: update for the practising clinician.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-023-01062-9",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 53,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "smoking"
+      ],
+      "abstract_characters_read": 1481,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "29685876",
+      "title": "Increased cardiovascular risk in rheumatoid arthritis: mechanisms and implications.",
+      "journal": "BMJ (Clinical research ed.)",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Review"
+      ],
+      "doi": "10.1136/bmj.k1036",
+      "pmcid": "PMC6889899",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 54,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1454,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "37231248",
+      "title": "Shared inflammatory pathways of rheumatoid arthritis and atherosclerotic cardiovascular disease.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "doi": "10.1038/s41584-023-00969-7",
+      "pmcid": "PMC10330911",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 55,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety"
+      ],
+      "abstract_characters_read": 1395,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40875187",
+      "title": "Safety Profile of Upadacitinib: Descriptive Analysis in Over 27,000 Patient-Years Across Rheumatoid Arthritis, Psoriatic Arthritis, Axial Spondyloarthritis, Atopic Dermatitis, and Inflammatory Bowel Disease.",
+      "journal": "Advances in therapy",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s12325-025-03328-y",
+      "pmcid": "PMC12474609",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 56,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "ibd_overlap",
+        "safety"
+      ],
+      "abstract_characters_read": 2547,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 168301
+    },
+    {
+      "pmid": "31469238",
+      "title": "Cardiovascular Safety of Tocilizumab Versus Etanercept in Rheumatoid Arthritis: A Randomized Controlled Trial.",
+      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "year": "2020",
+      "publication_types": [
+        "Comparative Study",
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1002/art.41095",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 57,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1973,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "38334476",
+      "title": "Cardiovascular complications of rheumatoid arthritis.",
+      "journal": "Current opinion in rheumatology",
+      "year": "2024",
+      "publication_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "doi": "10.1097/BOR.0000000000001004",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 58,
+      "evidence_design": "review",
+      "detected_topics": [
+        "precision_or_biomarker",
+        "safety"
+      ],
+      "abstract_characters_read": 1357,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "39831939",
+      "title": "Cardiovascular Risk Factor and Atherosclerosis in Rheumatoid Arthritis (RA).",
+      "journal": "Current cardiology reports",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s11886-025-02198-8",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 59,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "safety"
+      ],
+      "abstract_characters_read": 1170,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "24268008",
+      "title": "Cardiovascular disease in rheumatoid arthritis.",
+      "journal": "Rheumatic diseases clinics of North America",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.rdc.2013.10.005",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 60,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety"
+      ],
+      "abstract_characters_read": 750,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "31059840",
+      "title": "Rheumatoid arthritis (RA) and cardiovascular disease.",
+      "journal": "Autoimmunity reviews",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Retracted Publication"
+      ],
+      "doi": "10.1016/j.autrev.2019.05.005",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 61,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1354,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "24093840",
+      "title": "Rheumatoid arthritis and cardiovascular disease.",
+      "journal": "American heart journal",
+      "year": "2013",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1016/j.ahj.2013.07.010",
+      "pmcid": "PMC3890244",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 62,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1134,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "30656399",
+      "title": "[Cardiovascular comorbidities in rheumatoid arthritis].",
+      "journal": "Zeitschrift fur Rheumatologie",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s00393-018-0584-5",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 63,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1637,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "32494054",
+      "title": "Atherosclerotic cardiovascular disease prevention in rheumatoid arthritis.",
+      "journal": "Nature reviews. Rheumatology",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "doi": "10.1038/s41584-020-0428-y",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 64,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety"
+      ],
+      "abstract_characters_read": 1277,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "25802019",
+      "title": "Glucocorticoid safety for treating rheumatoid arthritis.",
+      "journal": "Expert opinion on drug safety",
+      "year": "2015",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1517/14740338.2015.1027681",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 65,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1299,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "30397830",
+      "title": "Cardiovascular and Metabolic Comorbidities in Rheumatoid Arthritis.",
+      "journal": "Current rheumatology reports",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s11926-018-0790-9",
+      "pmcid": "",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 66,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1179,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "29583150",
+      "title": "Rheumatoid arthritis and risk of cardiovascular disease.",
+      "journal": "Cardiovascular journal of Africa",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.5830/CVJA-2018-018",
+      "pmcid": "PMC8962697",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 67,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "smoking"
+      ],
+      "abstract_characters_read": 938,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "34164156",
+      "title": "Cardiovascular Risk in Rheumatoid Arthritis: Literature Review.",
+      "journal": "Oman medical journal",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.5001/omj.2021.25",
+      "pmcid": "PMC8204633",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 68,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety"
+      ],
+      "abstract_characters_read": 917,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 110152
+    },
+    {
+      "pmid": "38420123",
+      "title": "Exploring candidate biomarkers for rheumatoid arthritis through cardiovascular and cardiometabolic serum proteome profiling.",
+      "journal": "Frontiers in immunology",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.3389/fimmu.2024.1333995",
+      "pmcid": "PMC10900234",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 69,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "safety"
+      ],
+      "abstract_characters_read": 2213,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 118871
+    },
+    {
+      "pmid": "35628831",
+      "title": "Cardiovascular Disease Risk in Rheumatoid Arthritis Anno 2022.",
+      "journal": "Journal of clinical medicine",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/jcm11102704",
+      "pmcid": "PMC9142998",
+      "source_topic": "ibd_overlap_and_safety",
+      "source_query": "RA_FILTER AND (\"inflammatory bowel disease\"[Title] OR Crohn*[Title] OR \"ulcerative colitis\"[Title] OR cardiovascular[Title] OR infection*[Title] OR safety[Title])",
+      "iteration": 70,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety"
+      ],
+      "abstract_characters_read": 1056,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 136864
+    },
+    {
+      "pmid": "37227116",
+      "title": "2022 American College of Rheumatology Guideline for Exercise, Rehabilitation, Diet, and Additional Integrative Interventions for Rheumatoid Arthritis.",
+      "journal": "Arthritis care & research",
+      "year": "2023",
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Practice Guideline"
+      ],
+      "doi": "10.1002/acr.25117",
+      "pmcid": "",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 71,
+      "evidence_design": "guideline",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition",
+        "exercise_or_activity"
+      ],
+      "abstract_characters_read": 1873,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "34959772",
+      "title": "Effect of Anti-Inflammatory Diets on Pain in Rheumatoid Arthritis: A Systematic Review and Meta-Analysis.",
+      "journal": "Nutrients",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ],
+      "doi": "10.3390/nu13124221",
+      "pmcid": "PMC8706441",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 72,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "diet_or_nutrition",
+        "weight_or_obesity"
+      ],
+      "abstract_characters_read": 1385,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 155734
+    },
+    {
+      "pmid": "37182439",
+      "title": "Nutrition and its role in prevention and management of rheumatoid arthritis.",
+      "journal": "Autoimmunity reviews",
+      "year": "2023",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.autrev.2023.103333",
+      "pmcid": "",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 73,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1397,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "32443535",
+      "title": "Dietary Habits and Nutrition in Rheumatoid Arthritis: Can Diet Influence Disease Development and Clinical Manifestations?",
+      "journal": "Nutrients",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/nu12051456",
+      "pmcid": "PMC7284442",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 74,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 975,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 304085
+    },
+    {
+      "pmid": "35215538",
+      "title": "Nutrition and Diet in Rheumatoid Arthritis.",
+      "journal": "Nutrients",
+      "year": "2022",
+      "publication_types": [
+        "Editorial"
+      ],
+      "doi": "10.3390/nu14040888",
+      "pmcid": "PMC8878187",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 75,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 205,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 37018
+    },
+    {
+      "pmid": "39260371",
+      "title": "Dietary-timing-induced gut microbiota diurnal oscillations modulate inflammatory rhythms in rheumatoid arthritis.",
+      "journal": "Cell metabolism",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.cmet.2024.08.007",
+      "pmcid": "",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 76,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1129,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "32585000",
+      "title": "Rheumatoid arthritis and dietary interventions: systematic review of clinical trials.",
+      "journal": "Nutrition reviews",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.1093/nutrit/nuaa033",
+      "pmcid": "",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 77,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1352,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "38510244",
+      "title": "Rheumatoid arthritis and the intestinal microbiome: probiotics as a potential therapy.",
+      "journal": "Frontiers in immunology",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.3389/fimmu.2024.1331486",
+      "pmcid": "PMC10950920",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 78,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "diet_or_nutrition",
+        "smoking"
+      ],
+      "abstract_characters_read": 1394,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 206561
+    },
+    {
+      "pmid": "32055820",
+      "title": "Anti-inflammatory Diet In Rheumatoid Arthritis (ADIRA)-a randomized, controlled crossover trial indicating effects on disease activity.",
+      "journal": "The American journal of clinical nutrition",
+      "year": "2020",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1093/ajcn/nqaa019",
+      "pmcid": "PMC7266686",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 79,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 2185,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 140662
+    },
+    {
+      "pmid": "40362911",
+      "title": "The Role of Diet in Modulating Inflammation and Oxidative Stress in Rheumatoid Arthritis, Ankylosing Spondylitis, and Psoriatic Arthritis.",
+      "journal": "Nutrients",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/nu17091603",
+      "pmcid": "PMC12073256",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 80,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1311,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 231219
+    },
+    {
+      "pmid": "36323929",
+      "title": "A high-fiber diet synergizes with Prevotella copri and exacerbates rheumatoid arthritis.",
+      "journal": "Cellular & molecular immunology",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1038/s41423-022-00934-6",
+      "pmcid": "PMC9709035",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 81,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1087,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "34684507",
+      "title": "Dietary Interventions with or without Omega-3 Supplementation for the Management of Rheumatoid Arthritis: A Systematic Review.",
+      "journal": "Nutrients",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3390/nu13103506",
+      "pmcid": "PMC8540415",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 82,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1389,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 187926
+    },
+    {
+      "pmid": "41030267",
+      "title": "Nutrition and diet in rheumatoid arthritis, axial spondyloarthritis, and psoriatic arthritis: a systematic review.",
+      "journal": "Frontiers in medicine",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fmed.2025.1655165",
+      "pmcid": "PMC12477131",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 83,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 2134,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 284119
+    },
+    {
+      "pmid": "37033930",
+      "title": "Efficacy and safety of dietary polyphenols in rheumatoid arthritis: A systematic review and meta-analysis of 47 randomized controlled trials.",
+      "journal": "Frontiers in immunology",
+      "year": "2023",
+      "publication_types": [
+        "Meta-Analysis",
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "doi": "10.3389/fimmu.2023.1024120",
+      "pmcid": "PMC10073448",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 84,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "safety",
+        "diet_or_nutrition",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1802,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 550141
+    },
+    {
+      "pmid": "38922552",
+      "title": "Effects of omega-3 supplementation on lipid metabolism, inflammation, and disease activity in rheumatoid arthritis: a meta-analysis of randomized controlled trials.",
+      "journal": "Clinical rheumatology",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1007/s10067-024-07040-0",
+      "pmcid": "",
+      "source_topic": "diet_and_nutrition",
+      "source_query": "RA_FILTER AND (diet*[Title] OR nutrition*[Title] OR Mediterranean[Title] OR \"omega-3\"[Title] OR supplement*[Title] OR microbiome[Title])",
+      "iteration": 85,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "diet_or_nutrition"
+      ],
+      "abstract_characters_read": 1726,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "31203925",
+      "title": "Physical activity, exercise and rheumatoid arthritis: Effectiveness, mechanisms and implementation.",
+      "journal": "Best practice & research. Clinical rheumatology",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.berh.2019.03.013",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 86,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1153,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "33176012",
+      "title": "The effect of physical exercise on rheumatoid arthritis: An overview of systematic reviews and meta-analysis.",
+      "journal": "Journal of advanced nursing",
+      "year": "2021",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ],
+      "doi": "10.1111/jan.14574",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 87,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1798,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "30063798",
+      "title": "Exercise for rheumatoid arthritis of the hand.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2018",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "Systematic Review"
+      ],
+      "doi": "10.1002/14651858.CD003832.pub3",
+      "pmcid": "PMC6513509",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 88,
+      "evidence_design": "systematic_review_or_meta_analysis",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "safety",
+        "exercise_or_activity"
+      ],
+      "abstract_characters_read": 5790,
+      "full_text_status": "failed:HTTPError",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "25479074",
+      "title": "Smoking and rheumatoid arthritis.",
+      "journal": "International journal of molecular sciences",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/ijms151222279",
+      "pmcid": "PMC4284707",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 89,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "smoking",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 982,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 163416
+    },
+    {
+      "pmid": "29696812",
+      "title": "Effects of Aerobic and Resistance Exercise in Older Adults With Rheumatoid Arthritis: A Randomized Controlled Trial.",
+      "journal": "Arthritis care & research",
+      "year": "2019",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1002/acr.23589",
+      "pmcid": "PMC6590333",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 90,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "exercise_or_activity"
+      ],
+      "abstract_characters_read": 1800,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 111708
+    },
+    {
+      "pmid": "36771382",
+      "title": "Mediterranean Diet and Physical Activity Nudges versus Usual Care in Women with Rheumatoid Arthritis: Results from the MADEIRA Randomized Controlled Trial.",
+      "journal": "Nutrients",
+      "year": "2023",
+      "publication_types": [
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "doi": "10.3390/nu15030676",
+      "pmcid": "PMC9919932",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 91,
+      "evidence_design": "randomized_trial",
+      "detected_topics": [
+        "remission",
+        "safety",
+        "diet_or_nutrition",
+        "exercise_or_activity"
+      ],
+      "abstract_characters_read": 1881,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 196222
+    },
+    {
+      "pmid": "36227658",
+      "title": "Rheumatoid Arthritis and Oxidative Stress.",
+      "journal": "Cellular and molecular biology (Noisy-le-Grand, France)",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.14715/cmb/2022.68.6.28",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 92,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "treatment_response",
+        "precision_or_biomarker",
+        "diet_or_nutrition",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1054,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "20652573",
+      "title": "[Stress and rheumatoid arthritis].",
+      "journal": "Zeitschrift fur Rheumatologie",
+      "year": "2010",
+      "publication_types": [
+        "English Abstract",
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1007/s00393-010-0662-9",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 93,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1192,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40560403",
+      "title": "Physical activity of older patients with rheumatoid arthritis.",
+      "journal": "Rheumatology international",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1007/s00296-025-05901-8",
+      "pmcid": "PMC12198336",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 94,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1998,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 138913
+    },
+    {
+      "pmid": "24575509",
+      "title": "Exercise and fatigue in rheumatoid arthritis.",
+      "journal": "The Israel Medical Association journal : IMAJ",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 95,
+      "evidence_design": "review",
+      "detected_topics": [
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1773,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "28743355",
+      "title": "Rheumatoid arthritis and sleep quality.",
+      "journal": "Revista brasileira de reumatologia",
+      "year": "2017",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study"
+      ],
+      "doi": "10.1016/j.rbre.2016.07.011",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 96,
+      "evidence_design": "observational_or_registry",
+      "detected_topics": [
+        "treatment_response",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1211,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "39272142",
+      "title": "Sleep patterns, physical activity, genetic susceptibility, and incident rheumatoid arthritis: a prospective cohort study.",
+      "journal": "BMC medicine",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "doi": "10.1186/s12916-024-03615-5",
+      "pmcid": "PMC11401439",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 97,
+      "evidence_design": "observational_or_registry",
+      "detected_topics": [
+        "treatment_response",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 2205,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 122898
+    },
+    {
+      "pmid": "40847783",
+      "title": "Features of sarcopenic obesity in rheumatoid arthritis patients.",
+      "journal": "Geriatrics & gerontology international",
+      "year": "2025",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1111/ggi.70149",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 98,
+      "evidence_design": "other_peer_reviewed_research",
+      "detected_topics": [
+        "remission",
+        "weight_or_obesity"
+      ],
+      "abstract_characters_read": 1770,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    },
+    {
+      "pmid": "40028397",
+      "title": "Rheumatoid arthritis treatment: Is exercise a game changer?",
+      "journal": "Turkish journal of physical medicine and rehabilitation",
+      "year": "2024",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.5606/tftrd.2024.16088",
+      "pmcid": "PMC11868869",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 99,
+      "evidence_design": "review",
+      "detected_topics": [
+        "treatment_response",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 693,
+      "full_text_status": "cached",
+      "full_text_bytes_cached": 74535
+    },
+    {
+      "pmid": "26639220",
+      "title": "Physical activity in patients with rheumatoid arthritis.",
+      "journal": "Joint bone spine",
+      "year": "2016",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jbspin.2015.10.002",
+      "pmcid": "",
+      "source_topic": "lifestyle_and_function",
+      "source_query": "RA_FILTER AND (exercise[Title] OR \"physical activity\"[Title] OR smoking[Title] OR sleep[Title] OR obesity[Title] OR weight[Title] OR stress[Title])",
+      "iteration": 100,
+      "evidence_design": "review",
+      "detected_topics": [
+        "safety",
+        "exercise_or_activity",
+        "sleep_or_stress"
+      ],
+      "abstract_characters_read": 1873,
+      "full_text_status": "not_in_pubmed_central",
+      "full_text_bytes_cached": 0
+    }
+  ],
+  "clinical_status": "research evidence triage only; no treatment prescription or cure claim"
+}

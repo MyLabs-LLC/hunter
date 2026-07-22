@@ -77,6 +77,23 @@ treatment exposure, response outcome, preprocessing, and fixed split. Until
 then, the loop reports the candidate rather than fabricating a result. It never
 selects a treatment plan for the de-identified case.
 
+## PubMed 100-source remission loop
+
+`run_pubmed_remission_loop.py` executes the fixed 100-source clinical-evidence
+budget across remission/treat-to-target, treatment sequence/precision, IBD and
+safety, diet/nutrition, and lifestyle/function. It requires unique PubMed IDs,
+RA-indexed human clinical evidence or reviews, title-level topic relevance, and
+a readable abstract. Available PubMed Central full text is cached locally and
+ignored by Git.
+
+```bash
+/path/to/bootstrap-python run_pubmed_remission_loop.py \
+  --report-dir reports --research-dir research/pubmed
+```
+
+The acquisition manifest is `reports/pubmed_100_loop.md`; claim-level synthesis
+and case applicability are in `reports/case_remission_report.md`.
+
 Large matrices, MLflow state, run outputs, and model binaries are ignored by Git.
 Small configs, checksums, audit records, and reports remain trackable.
 
