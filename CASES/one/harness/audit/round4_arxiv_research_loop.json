@@ -1,0 +1,27 @@
+{
+  "id": "round4_arxiv_research_loop",
+  "surface": "research evidence acquisition and dataset-contract validation",
+  "source": {
+    "provider": "arXiv API",
+    "query": "all:\"rheumatoid arthritis\"",
+    "sort": "submittedDate descending",
+    "iteration_cap": 1000,
+    "unique_source_results": 87,
+    "completed_iterations": 87
+  },
+  "mechanism": "find a new public, labeled baseline RA treatment-response cohort before proposing another model edit",
+  "evidence": {
+    "treatment_screen_candidates": 33,
+    "papers_with_identifier_or_named_source": 9,
+    "unique_geo_series_checked": 14,
+    "candidate_ra_treatment_response_geo_series": 0,
+    "direct_response_paper": "arXiv:2210.08016",
+    "direct_response_paper_data_source": "CORRONA/CERTAIN registry",
+    "direct_response_paper_local_reproducibility": "no public accession supplied"
+  },
+  "editable_surface": "none",
+  "sealed_evaluator": "GSE129705 Cohort 2 remains unmodified and was not re-scored",
+  "decision": "no_candidate_experiment",
+  "stopped_reason": "source_exhausted_no_compatible_public_response_dataset",
+  "clinical_status": "research triage only; no patient-level treatment claim or recommendation"
+}

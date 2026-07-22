@@ -227,6 +227,11 @@ CASES/*/harness/data/raw/
 CASES/*/harness/data/processed/
 CASES/*/harness/models/
 CASES/*/harness/artifacts/
+# Full-text research downloads and extraction caches are reproducible from the
+# source manifest, but are too large and volatile to track.
+CASES/*/harness/research/papers/
+CASES/*/harness/research/text/
+CASES/*/harness/research/geo/
 
 # Common large dataset and trained-model formats under case harnesses.
 CASES/*/harness/**/*.parquet

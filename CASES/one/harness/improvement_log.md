@@ -51,3 +51,25 @@
 - Stopped reason: `no_non_regressing_candidate`.
 - Next evidence target: pre-registered cell-composition features or a third
   untouched cohort; do not continue generic tuning against Cohort 2.
+
+## Round 4 — arXiv RA-treatment evidence-acquisition loop
+
+- Source: current arXiv `"rheumatoid arthritis"` corpus, newest submission first,
+  with a hard cap of 1,000 unique papers.
+- Result: arXiv returned 87 unique papers, so the loop stopped
+  `source_exhausted` rather than duplicating documents. Each accessible PDF was
+  downloaded and read locally; the per-paper record is in
+  `reports/arxiv_treatment_loop.md`.
+- Treatment screen: 33 papers had an RA phrase and a treatment-oriented term in
+  their title or abstract. Nine papers supplied an explicit identifier or named
+  data source.
+- Dataset gate: 14 unique GEO series were checked against official series
+  metadata. None was an RA treatment-response cohort with a usable public
+  contract; the RA GEO records were case/control or mechanistic studies.
+- Key reproducibility finding: the direct anti-TNF response paper
+  `arXiv:2210.08016` names the CORRONA/CERTAIN registry, but the paper does not
+  provide a public data accession. It cannot be rerun locally from the paper.
+- Decision: no new cohort/model experiment was valid. The fixed GSE129705
+  external result is retained without re-scoring its sealed cohort. No treatment
+  claim, model promotion, or treatment-plan inference is supported.
+- Stopped reason: `source_exhausted_no_compatible_public_response_dataset`.

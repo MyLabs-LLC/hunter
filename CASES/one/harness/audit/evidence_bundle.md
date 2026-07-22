@@ -106,3 +106,22 @@ Stop reason: `no_non_regressing_candidate`. Continuing to choose generic
 hyperparameters against Cohort 2 would increasingly tune to the external set.
 A new loop should first pre-register either a cell-composition feature contract
 or an additional untouched cohort, then reseal evaluation before compute.
+
+## Round-4 evidence acquisition — arXiv treatment research
+
+The broad arXiv query returned 87 unique rheumatoid-arthritis papers, fewer
+than the approved 1,000-document cap. The local loop read every accessible full
+text and screened treatment relevance from title/abstract only, so incidental
+reference-list mentions could not make a paper a treatment candidate.
+
+The actionable failure signature is **no compatible public response-data
+contract**. Nine papers named a data resource or accession. Official GEO
+metadata checks covered 14 unique GEO series: none supplied a baseline RA
+treatment exposure plus response outcome suitable for the fixed evaluator.
+The one direct anti-TNF response-model paper named the CORRONA/CERTAIN registry
+but supplied no downloadable accession.
+
+This cluster is not addressable by changing model hyperparameters or the
+evaluator. The correct candidate set is empty. Reusing the sealed GSE129705
+external labels to choose an unrelated paper's hypothesis would be leakage, so
+the loop records a negative result and stops.

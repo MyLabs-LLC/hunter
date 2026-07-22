@@ -176,3 +176,24 @@ the status remains **research hypothesis, not treatment proof**.
 All evaluator changes and retained negative results are Git-committed. Tests
 pass, and large raw data, model artifacts, caches, and MLflow state are excluded
 from version control.
+
+## 8. arXiv treatment-research supplement
+
+The local evidence-acquisition loop queried the current arXiv rheumatoid-
+arthritis corpus in descending submission-date order with a 1,000-paper cap. It
+found 87 unique papers and stopped `source_exhausted`, rather than reusing
+documents. Each accessible PDF was downloaded and read locally; the complete
+per-paper record is in [the arXiv loop report](arxiv_treatment_loop.md).
+
+Thirty-three papers met the deliberately simple RA-treatment screen. Nine named
+an accession or data source. Official metadata checks of 14 unique GEO series
+showed no compatible public baseline treatment-response cohort: the RA records
+were case/control or mechanistic studies, and other series were not RA response
+studies. The direct anti-TNF response-model preprint
+[arXiv:2210.08016](https://arxiv.org/abs/2210.08016) identifies the
+CORRONA/CERTAIN registry but supplies no public data accession, so it cannot be
+reproduced locally from the paper.
+
+Accordingly, no new experiment was valid and the sealed external GSE129705
+cohort was not re-scored. This reinforces, rather than changes, the central
+finding: there is no research basis here for a patient-specific treatment plan.

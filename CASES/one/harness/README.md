@@ -58,6 +58,25 @@ PYTHONPATH=src /path/to/bootstrap-python run_external_baseline.py
 PYTHONPATH=src /path/to/bootstrap-python run_external_candidates.py
 ```
 
+## arXiv RA-treatment research loop
+
+`run_arxiv_treatment_loop.py` retrieves the current arXiv corpus returned for
+`"rheumatoid arthritis"`, newest first, with a hard cap of 1,000 unique papers.
+For each paper it downloads the public PDF, extracts local text, records explicit
+data identifiers (for example, GEO accessions), and updates
+`reports/arxiv_treatment_loop.md` immediately. PDFs and extraction caches stay
+local and are ignored by Git; the source URLs and per-paper findings are tracked.
+
+```bash
+/path/to/bootstrap-python run_arxiv_treatment_loop.py --limit 1000
+```
+
+It is deliberately conservative: mentioning an accession is not enough to run a
+response model. A dataset must first have a documented baseline time point,
+treatment exposure, response outcome, preprocessing, and fixed split. Until
+then, the loop reports the candidate rather than fabricating a result. It never
+selects a treatment plan for the de-identified case.
+
 Large matrices, MLflow state, run outputs, and model binaries are ignored by Git.
 Small configs, checksums, audit records, and reports remain trackable.
 
