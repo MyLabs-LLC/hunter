@@ -94,6 +94,23 @@ ignored by Git.
 The acquisition manifest is `reports/pubmed_100_loop.md`; claim-level synthesis
 and case applicability are in `reports/case_remission_report.md`.
 
+## Clinician/researcher PDF
+
+`generate_doctor_research_pdf.py` builds the polished, clinician-facing report
+from the narrative source and the two audited literature manifests. It includes
+the top ten case actions, treatment and lifestyle evidence, every local
+experiment and lesson, and complete 100-document PubMed and 87-paper arXiv
+catalogues.
+
+```bash
+uv pip install --python /path/to/bootstrap-python reportlab==5.0.0
+/path/to/bootstrap-python generate_doctor_research_pdf.py \
+  --source reports/doctor_ra_research_brief.md \
+  --pubmed reports/pubmed_100_loop.json \
+  --arxiv reports/arxiv_treatment_loop.json \
+  --output reports/CASE-RA-D2T-A_doctor_research_brief.pdf
+```
+
 Large matrices, MLflow state, run outputs, and model binaries are ignored by Git.
 Small configs, checksums, audit records, and reports remain trackable.
 
