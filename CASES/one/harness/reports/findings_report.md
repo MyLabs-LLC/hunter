@@ -197,3 +197,21 @@ reproduced locally from the paper.
 Accordingly, no new experiment was valid and the sealed external GSE129705
 cohort was not re-scored. This reinforces, rather than changes, the central
 finding: there is no research basis here for a patient-specific treatment plan.
+
+## 9. Current web-evidence supplement
+
+The subsequent review of current RA guidance, D2T management guidance,
+comparative trials, a network meta-analysis, regulator safety information, and
+the trial registry found a conditional strategy—not an individual treatment.
+For objectively active RA after a first TNF-inhibitor failure, a change to a
+different mechanism has stronger comparative support than automatically using a
+second TNF inhibitor in the studied populations. The case record cannot establish
+whether that population or its safety constraints apply here.
+
+In particular, current D2T guidance requires establishing whether symptoms
+reflect active inflammation before escalating DMARDs, and JAK-inhibitor use
+requires individualized risk assessment. The case's incomplete inflammatory
+assessment, exposure history, overlap-disease details, and safety workup mean
+there is still no patient-level treatment proof. The complete source-linked
+analysis is in [the web-evidence review](web_evidence_review.md); the audit
+record is [round 5](../audit/round5_web_evidence_loop.json).

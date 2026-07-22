@@ -1,0 +1,33 @@
+{
+  "id": "round5_web_evidence_loop",
+  "surface": "current clinical treatment evidence acquisition",
+  "sources_read": {
+    "current_guideline": "2025 EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs",
+    "difficult_to_treat_guidance": "EULAR points to consider for the management of difficult-to-treat rheumatoid arthritis",
+    "us_guideline_context": "American College of Rheumatology rheumatoid arthritis guideline page",
+    "comparative_randomized_trial": "non-TNF-targeted biologic versus a second TNF inhibitor after first TNF inhibitor failure (PMID: 27654603)",
+    "evidence_synthesis": "Bayesian network meta-analysis of cycling versus switching targeted therapy (PMID: 33854570)",
+    "recent_switch_trial": "SELECT-SWITCH, DOI: 10.1016/j.ard.2026.03.013",
+    "safety_regulator": "FDA JAK-inhibitor safety communication",
+    "trial_registry": "ClinicalTrials.gov NCT06754462"
+  },
+  "mechanism": "determine whether current external evidence supplies an individualizable treatment or a valid public cohort for a new local experiment",
+  "evidence": {
+    "supported_sequence_level_finding": "after first TNF-inhibitor failure in studied active-RA populations, changing to a different mechanism has comparative support over automatically cycling to another TNF inhibitor",
+    "required_first_fork": "confirm active inflammatory disease and exclude alternative contributors before DMARD escalation",
+    "specific_drug_proof_for_case": false,
+    "new_public_baseline_response_dataset": false,
+    "new_local_model_experiment": false,
+    "sealed_evaluator": "GSE129705 Cohort 2 was not re-scored"
+  },
+  "case_level_gaps": [
+    "objective inflammatory activity",
+    "full DMARD exposure-response and discontinuation history",
+    "infection, malignancy, cardiovascular and thrombotic safety screen",
+    "IBD/overlap disease phenotype and treatment",
+    "patient goals and preferences"
+  ],
+  "decision": "no_candidate_experiment_and_no_individual_treatment_selection",
+  "stopped_reason": "no_individualizable_treatment_evidence",
+  "clinical_status": "research evidence summary only; clinician-led assessment required"
+}

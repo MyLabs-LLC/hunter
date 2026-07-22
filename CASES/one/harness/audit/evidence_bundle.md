@@ -125,3 +125,23 @@ This cluster is not addressable by changing model hyperparameters or the
 evaluator. The correct candidate set is empty. Reusing the sealed GSE129705
 external labels to choose an unrelated paper's hypothesis would be leakage, so
 the loop records a negative result and stops.
+
+## Round-5 web clinical-evidence acquisition
+
+The follow-up web review read current treatment guidance, a D2T-specific
+framework, randomized and synthesized switch-versus-cycle evidence, regulator
+safety guidance, and a trial registry record. The evidence identifies a
+conditional sequence-level hypothesis: after a *first* TNFi failure in studied
+patients with objectively active RA, changing to a different mechanism has
+stronger comparative support than automatically cycling to another TNFi.
+
+It does not provide a valid individual-treatment label. The case lacks an
+objective activity assessment, a complete exposure/response/discontinuation
+history, relevant infection/malignancy/cardiovascular/thrombotic screening, and
+coordinated overlap-disease assessment. The JAK-specific trial signal cannot
+cross the FDA risk-assessment gate from the currently available case record.
+
+No public baseline treatment-response dataset was found in this evidence
+tranche. Therefore the editable model surface remains empty and the fixed
+GSE129705 external evaluator remains unaccessed. See
+`reports/web_evidence_review.md` and `audit/round5_web_evidence_loop.json`.

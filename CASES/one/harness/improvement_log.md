@@ -73,3 +73,25 @@
   external result is retained without re-scoring its sealed cohort. No treatment
   claim, model promotion, or treatment-plan inference is supported.
 - Stopped reason: `source_exhausted_no_compatible_public_response_dataset`.
+
+## Round 5 — web clinical-evidence loop
+
+- Sources read: current EULAR RA management guidance, EULAR D2T RA points to
+  consider, ACR RA guideline context, a post-first-TNFi randomized comparative
+  trial, a switch-versus-cycle network meta-analysis, SELECT-SWITCH, FDA JAK
+  safety information, and a current ClinicalTrials.gov record.
+- Evidence finding: in the studied population with objectively active RA after
+  a first TNFi failure, changing to a different mechanism has stronger
+  comparative support than automatically cycling to another TNFi. This is a
+  sequence-level result, not evidence that a named therapy will work in this
+  case.
+- Safety/validity gate: D2T guidance requires checking for active inflammation
+  and alternative symptom drivers before DMARD escalation. JAK use additionally
+  requires individualized FDA-labelled risk assessment; the available case data
+  do not meet that contract.
+- Dataset gate: no new compatible public baseline treatment-response cohort was
+  identified, so no model run was valid. The sealed GSE129705 Cohort 2 was not
+  accessed or re-scored.
+- Decision: no treatment selection and no candidate experiment. Detailed,
+  source-linked synthesis: `reports/web_evidence_review.md`.
+- Stopped reason: `no_individualizable_treatment_evidence`.
